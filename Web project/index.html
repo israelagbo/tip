@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- <meta http-equiv="refresh" content="10">-->
+    <meta name="author" content="Andeson jnr.">
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Teddy's project| Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+    <div class="tip-calculator">
+      <div class="partone">
+        <label for="bill">Bill</label>
+        <input type="number" class="input bill-input" id="bill-input" />
+        <label for="tip">select Tip %</label>
+        <div class="tip">
+          <div class="tip tips">5%</div>
+          <div class="tip tips">10%</div>
+          <div class="tip tips active-tip">15%</div>
+          <div class="tip tips">25%</div>
+          <div class="tip tips">50%</div>
+          <div id="tip-custom"><input type="number" class="tip-custom" placeholder="Custom"></div>
+        </div>
+        <div class="peoplelabel">
+          <label for="people">Number of people</label>
+          <label for="zero" class="error">can't be zero</label>
+        </div>
+
+        <input type="number" class="input people-input" placeholder="">
+      </div>
+      <div class="result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$4.27</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total-amount">$32.79</div>
+        </div>
+        <div class="reset">RESET</div>
+      </div>
+    </div>
+     <script src="./design/script.js"></script>
+  </body>
+</html>
